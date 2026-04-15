@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, serif;
+  background-color: #f5ede0;
+  color: #2c1a0e;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header {
+  font-family: "Muli", Verdana, Geneva, serif;
+  max-width: 740px;
+  margin: 2rem auto 3rem;
+  border-bottom: 1px solid #645151;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #9c7a5e;
+}
+
+header nav ul li a:hover {
+  color: #2c1a0e;
+}
+
+h1 {
+  font-family: "Muli", Verdana, Geneva, serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+h4 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 6px 0;
+}
+
+ol, ul {
+  padding-left: 1.4rem;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 0.2rem;
+}
+
+video {
+  display: block;
+  margin: 0.75rem auto 0;
+  max-width: 360px;
+  border: 5px solid #b47e59;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #2c1a0e;
+  margin: 0 auto;
+}
+
+a {
+  color: #9c7a5e;
+}
+
+a:hover {
+  color: #2c1a0e;
+}
+
+
+/* index page styling */
+
+#bio {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+#bio p {
+  line-height: 1.6em;
+}
+
+#hobbies h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #7a4f2e;
+  border-bottom: 2px solid #2c1a0e;
+}
+
+.hobby {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  text-align: left;
+}
+
+.hobby p {
+  line-height: 1.5em;
+}
+
+.hobby ol,
+.hobby ul {
+  display: block;
+  text-align: left;
+  list-style: disc;
+}
+
+/* keyboard page styling */
+
+.caption {
+  float: left;
+  max-width: 40rem;
+  padding-bottom: 2em;
+  font-style: italic;
+  line-height: 1.4em;
+}
+
+#keyboard-pictures {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#keyboard-pictures .keyboard {
+  margin-bottom: 3rem;
+}
+
+#info h2 {
+  padding-top: 1em;
+}
+
+#info p {
+  line-height: 1.5em;
+}
+
+/* resume page styling */
+
+.resume-container {
+  width: 740px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact {
+  margin-bottom: 28px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+#contact h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-top: none;
+}
+
+#contact .contact-details {
+  float: left;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+}
+
+.resume-container h2 {
+  border-top: 1px solid #2c1a0e;
+  padding-top: 0.75em;
+  margin-bottom: 14px;
+}
+
+.work {
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.work:last-child {
+  margin-bottom: 0;
+}
+
+.work .date {
+  float: right;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #645151;
+}
+
+#skills ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 1.4rem;
+  display: block;
+}
+
+#skills li {
+  margin-bottom: 0.4rem;
+}
