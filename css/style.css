@@ -234,6 +234,20 @@ section {
   text-align: left;
 }
 
+/* styling for map page */
+
+#map-container h1 {
+  text-align: center;
+}
+
+#map-intro {
+  margin-bottom: 1.2rem;
+  line-height: 1.6em;
+  max-width: 560px;
+  margin: 0 auto 1.4rem;
+  text-align: center;
+}
+
 #map {
   width: 100%;
   height: 500px;
