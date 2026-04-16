@@ -1,6 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // seems like the best way to get what is current?
+  let currentPage = window.location.pathname.split("/").pop();
 
+  const navLinks = [
+    "index.html",
+    "resume.html",
+    "keyboards.html",
+    "map.html"
+  ];
 
+  if (currentPage === "") {
+    currentPage = "index.html";
+  }
+
+  // loops through each nav link to match then highlights it as current page
+  for (let i = 0; i < navLinks.length; i++) {
+    if (currentPage === navLinks[i]) {
+      const currentLink = document.querySelector(`a[href="${navLinks[i]}"]`);
+
+      if (currentLink) {
+        currentLink.style.fontWeight = "bold";
+        currentLink.style.color = "#2c1a0e";
+      }
+    }
+  }
 });
 
 function initMap() {
@@ -9,7 +32,7 @@ function initMap() {
     zoom:   11,
     center: { lat: 41.8781, lng: -87.6298 },
 
-    /* tried to match colors to website !*/
+    // tried to match colors to website !
     styles: [
       { featureType: "all", elementType: "geometry.fill", stylers: [{ color: "#f5ede0" }] },
       { featureType: "water", elementType: "geometry", stylers: [{ color: "#aad3df" }] },
