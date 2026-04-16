@@ -227,3 +227,11 @@ section {
 #skills li {
   margin-bottom: 0.4rem;
 }
+
+@media (min-width: 480px) {
+ 
+  body {
+    font-size: 1.05rem;
+  }
+
+}
