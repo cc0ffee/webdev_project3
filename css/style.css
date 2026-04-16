@@ -228,9 +228,28 @@ section {
   margin-bottom: 0.4rem;
 }
 
+#map-container {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 #map {
-  width:100%; 
-  height:900px;
+  width: 100%;
+  height: 500px;
+  border: 5px solid #b47e59;
+  margin: 0 auto 1rem;
+}
+
+#info-box {
+  background: #fff8f2;
+  border: 1px solid #b47e59;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  min-height: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5em;
 }
 
 /* mobile-friendly for home page */

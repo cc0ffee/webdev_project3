@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initMap() {
 
   var options = {
-    zoom:   12,
+    zoom:   10,
     center: { lat: 41.8781, lng: -87.6298 },
 
     /* tried to match colors to website !*/
@@ -33,7 +33,7 @@ function initMap() {
     { title: "Standing Passengers", lat: 41.8962681, lng: -87.6647176, category: "coffee", desc: "Best Vibes for a cafe, and awesome people always there!" },
     { title: "Wormhole Coffee", lat: 41.9084133, lng: -87.6746028, category: "coffee", desc: "Get the Ghostly Trio! One of the best speciality drinks in the city!" },
     { title: "Illinois Institute of Technology", lat: 41.8350, lng: -87.6272, category: "iit", desc: "The university!" },
-    { title: "The Bog (IIT Arcade)", lat: 41.8348, lng: -87.6268, category: "iit", desc: "The arcade where I maintain the DDR machine. Going 2 years strong!" }
+    { title: "The Bog (IIT Arcade)", lat: 41.8353544, lng: -87.6282624, category: "iit", desc: "The arcade where I maintain the DDR machine. Going 2 years strong!" }
   ];
 
   locations.forEach(function (loc) {
