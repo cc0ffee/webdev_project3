@@ -36,12 +36,21 @@ function initMap() {
     { title: "The Bog (IIT Arcade)", lat: 41.8353544, lng: -87.6282624, category: "iit", desc: "The arcade where I maintain the DDR machine. Going 2 years strong!" }
   ];
 
+  var infoBox = document.getElementById("info-box");
+
   locations.forEach(function (loc) {
     var marker = new google.maps.Marker({
       position: {lat: loc.lat, lng: loc.lng },
       map: map,
       title: loc.title,
     });
-  })
 
-};
+    marker.addListener("click", function () {
+      if (infoBox) {
+        infoBox.innerHTML = "<strong>" + loc.title + "</strong><br>" + loc.desc;
+      }
+      map.panTo(marker.getPosition());
+    });
+  });
+
+}
