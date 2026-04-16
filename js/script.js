@@ -32,7 +32,7 @@ function initMap() {
     zoom:   11,
     center: { lat: 41.8781, lng: -87.6298 },
 
-    // tried to match colors to website !
+    // feature 1 - tried to match colors to website !
     styles: [
       { featureType: "all", elementType: "geometry.fill", stylers: [{ color: "#f5ede0" }] },
       { featureType: "water", elementType: "geometry", stylers: [{ color: "#aad3df" }] },
@@ -46,7 +46,7 @@ function initMap() {
     mapTypeControl:    false,
     streetViewControl: false
   };
-
+  // base feature - map
   var el = document.getElementById("map");
 
   var map = new google.maps.Map(el, options);
@@ -65,7 +65,7 @@ function initMap() {
   }
 
   var infoBox = document.getElementById("info-box");
-
+  // feature 2 - markers categorized by color
   locations.forEach(function (loc) {
     var marker = new google.maps.Marker({
       position: {lat: loc.lat, lng: loc.lng },
@@ -80,7 +80,7 @@ function initMap() {
         scale: 10
       }
     });
-
+    // feature 3 - info box changes to show info
     marker.addListener("click", function () {
       if (infoBox) {
         infoBox.innerHTML = "<strong>" + loc.title + "</strong><br>" + loc.desc;
