@@ -25,8 +25,18 @@ function initMap() {
     streetViewControl: false
   };
 
-  var container = document.getElementById("map");
+  var el = document.getElementById("map");
 
-  var map = new google.maps.Map(container, options);
+  var map = new google.maps.Map(el, options);
+
+  var locations = [
+    { title: "Ritual Coffeehouse", lat: 41.8965, lng: -87.6768, category: "coffee", desc: "My favorite coffeeshop! Right off Irving Park Brown Line stop." },
+    { title: "Standing Passengers", lat: 41.8951, lng: -87.6602, category: "coffee", desc: "Best Vibes for a cafe, and awesome people always there!" },
+    { title: "Wormhole Coffee", lat: 41.9086, lng: -87.6801, category: "coffee", desc: "Get the Ghostly Trio! One of the best speciality drinks in the city!" },
+    { title: "Damen Blue Line Station", lat: 41.9095, lng: -87.6779, category: "cta", desc: "My favorite CTA station — great architecture and an iconic Chicago L stop." },
+    { title: "Midway (Orange Line terminus)", lat: 41.7869, lng: -87.7378, category: "cta", desc: "Southern end of the Orange Line, my favorite train line on the CTA!" },
+    { title: "Illinois Institute of Technology", lat: 41.8350, lng: -87.6272, category: "iit", desc: "The university!" },
+    { title: "The Bog (IIT Arcade)", lat: 41.8348, lng: -87.6268, category: "iit", desc: "The arcade where I maintain the DDR machine. Going 2 years strong!" }
+  ];
 
 };
