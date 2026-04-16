@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initMap() {
 
   var options = {
-    zoom:   10,
+    zoom:   11,
     center: { lat: 41.8781, lng: -87.6298 },
 
     /* tried to match colors to website !*/
@@ -36,6 +36,11 @@ function initMap() {
     { title: "The Bog (IIT Arcade)", lat: 41.8353544, lng: -87.6282624, category: "iit", desc: "The arcade where I maintain the DDR machine. Going 2 years strong!" }
   ];
 
+  var categoryColors = {
+    coffee: "#b47e59",
+    iit: "#c0392b"
+  }
+
   var infoBox = document.getElementById("info-box");
 
   locations.forEach(function (loc) {
@@ -43,6 +48,14 @@ function initMap() {
       position: {lat: loc.lat, lng: loc.lng },
       map: map,
       title: loc.title,
+      // docs for icon https://developers.google.com/maps/documentation/javascript/symbols
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: categoryColors[loc.category],
+        fillOpacity: 1,
+        strokeWeight: 2,
+        scale: 10
+      }
     });
 
     marker.addListener("click", function () {
