@@ -228,6 +228,8 @@ section {
   margin-bottom: 0.4rem;
 }
 
+/* mobile-friendly for home page */
+
 @media (min-width: 480px) {
  
   body {
@@ -257,4 +259,44 @@ section {
     max-width: 420px;
   }
 
+}
+
+@media (min-width: 768px) {
+ 
+  body {
+    font-size: 1.1rem;
+  }
+ 
+  header nav ul li a {
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+  }
+ 
+  h1 {
+    font-size: 2.2rem;
+  }
+ 
+  h2 {
+    font-size: 1.35rem;
+  }
+ 
+  #bio {
+    max-width: 580px;
+    padding: 0;
+  }
+ 
+  .hobby {
+    max-width: 580px;
+    padding: 0;
+  }
+ 
+  video {
+    max-width: 480px;
+    border-width: 6px;
+  }
+ 
+  #hobbies h3 {
+    font-size: 1.2rem;
+  }
+ 
 }
