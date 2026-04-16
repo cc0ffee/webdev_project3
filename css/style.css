@@ -233,5 +233,28 @@ section {
   body {
     font-size: 1.05rem;
   }
+ 
+  header {
+    margin: 2.5rem auto 3rem;
+    padding-bottom: 1.25rem;
+  }
+ 
+  header nav ul {
+    gap: 3rem;
+  }
+ 
+  #bio {
+    max-width: 420px;
+    padding: 0 1rem;
+  }
+ 
+  .hobby {
+    max-width: 420px;
+    padding: 0 1rem;
+  }
+ 
+  video {
+    max-width: 420px;
+  }
 
 }
